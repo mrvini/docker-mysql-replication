@@ -1,0 +1,13 @@
+[mysqld]
+server-id=1
+log-bin=/var/log/mysql/mysql-bin.log
+innodb_flush_log_at_trx_commit=0
+binlog_do_db=testing
+sync_binlog=1
+bind-address=0.0.0.0
+#skip-name-resolve
+character_set_server=utf8
+collation_server=utf8_general_ci
+
+[mysql]
+default_character_set = utf8
